@@ -1,0 +1,37 @@
+a {
+    cursor: pointer;
+}
+
+.navbar-scrolled {
+    background-color: #ffffff;
+}
+
+.navbar-scrolled .navbar-nav li a {
+    color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.navbar-scrolled .navbar-nav li a.active,
+.navbar-scrolled .navbar-nav li a:hover,
+.navbar-scrolled .navbar-nav li a:active {
+    color: #000000 !important;
+}
+
+.nav-sticky.navbar-scrolled .navbar-nav li a.active,
+.nav-sticky.navbar-scrolled .navbar-nav li a:hover,
+.nav-sticky.navbar-scrolled .navbar-nav li a:active {
+    color: #000000 !important;
+}
+
+.navbar-scrolled .navbar-nav li a {
+    color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.navbar-scrolled .navbar-nav li.active a,
+.navbar-scrolled .navbar-nav li a:hover,
+.navbar-scrolled .navbar-nav li a:active {
+    color: #000000 !important;
+}
+
+.navbar-scrolled .navbar-brand {
+  color: #000000 !important
+}

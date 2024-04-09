@@ -1,0 +1,34 @@
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark" id="navbar1" >
+    <div class="container" (sectionChange)="onSectionChange($event)" >
+        <!-- LOGO -->
+        <a class="navbar-brand logo text-uppercase" routerLink="/">
+            <img class="mdi mdi-alien" src="assets/logo.png" style="height: 100px; width: 200px;"/>
+        </a>
+
+        <button class="navbar-toggler" (click)="toggleMenu()" type="button" id="menu_button" data-toggle="collapse"
+            data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="mdi mdi-menu"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-center" id="mySidenav">
+                <li class="nav-item">
+                    <a data="id_home" [ngClass]="{'active':curentsection === 'home'}" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a data="id_features" [ngClass]="{'active':curentsection === 'features'}" class="nav-link">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a data="id_services" [ngClass]="{'active':curentsection === 'services'}" class="nav-link">Music</a>
+                </li>
+                <li class="nav-item">
+                    <a data="id_about" [ngClass]="{'active':curentsection === 'about'}" class="nav-link">Merch</a>
+                </li>
+                <li class="nav-item">
+                    <a data="id_pricing" [ngClass]="{'active':curentsection === 'pricing'}" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
